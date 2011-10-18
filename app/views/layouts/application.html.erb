@@ -1,0 +1,20 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+  <head>
+    <title><%= title %></title>
+    <%= javascript_include_tag "application" %>
+    <%= csrf_meta_tag %>
+    <%= render 'layouts/stylesheets' %>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"></script>    
+    <%= render 'layouts/header' %>
+    </head>
+  <body>
+    <section class="round">
+      
+      <%= yield %>
+      </section>
+    </div>
+  </body>
+</html>
+

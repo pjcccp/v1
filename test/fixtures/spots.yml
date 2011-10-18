@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/Fixtures.html
+
+one:
+  title: MyString
+  name: MyString
+  amount: 9.99
+  notes: MyText
+  payback_date: 2011-09-27
+
+two:
+  title: MyString
+  name: MyString
+  amount: 9.99
+  notes: MyText
+  payback_date: 2011-09-27

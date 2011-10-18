@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Title:</b>
+  <%= @spot.title %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%= @spot.name %>
+</p>
+
+<p>
+  <b>Amount:</b>
+  <%= @spot.amount %>
+</p>
+
+<p>
+  <b>Notes:</b>
+  <%= @spot.notes %>
+</p>
+
+<p>
+  <b>Payback date:</b>
+  <%= @spot.payback_date %>
+</p>
+
+
+<%= link_to 'Edit', edit_spot_path(@spot) %> |
+<%= link_to 'Back', spots_path %>

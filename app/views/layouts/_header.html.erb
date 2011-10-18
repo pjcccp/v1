@@ -1,0 +1,19 @@
+  <div class="container">
+  <%= image_tag("logo.png", :alt => "Sample App", :class => "round") %>
+  <nav class="round">
+    <ul>
+      <% if current_user %>
+        <li>Hello <%= current_user.name %>.</li>
+        <li><%= link_to "Home", '/spots' %></li>
+        <li><%= link_to "Profile", users_path(:id) %></li>
+        <li> <%= link_to "Log out", log_out_path %></li>
+      <% else %>
+      <li><%= link_to "Sign up", sign_up_path %></li><li> or </li>
+        <li><%= link_to "log in", log_in_path %></li>
+      <% end %>
+    </ul>
+  </nav>
+  <% flash.each do |name, msg| %>
+  <%= content_tag :div, msg, :id => "flash_#{name}" %>
+  <% end %>
+      

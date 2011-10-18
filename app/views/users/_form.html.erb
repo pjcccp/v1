@@ -1,0 +1,21 @@
+<%= form_for @user do |f| %>
+  <%= error_messages_for @user, :header_message => "Couldn't create the user"%>
+  <p>
+    <%= f.label :name %></br>
+    <%= f.text_field :name %>
+  </br>
+    <%= f.label :email %></br>
+    <%= f.text_field :email %>
+  </br>
+    <%= f.label :password %></br>
+    <%= f.password_field :password %>
+ </br>
+    <%= f.label :password_confirmation %></br>
+    <%= f.password_field :password_confirmation %>
+  </p>
+  </br>
+  
+  <p class="button"><%= f.submit 'Submit' %></p>
+  </p>
+  
+<% end %>
